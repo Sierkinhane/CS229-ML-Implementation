@@ -14,13 +14,13 @@ from math import exp
 import time
 np.random.seed(1)
 
-# Hyper-prameters
+# Hyper-parameters
 LR = 0.05
 DECAY_RATE = 0.005
 THETA = np.random.normal(0, 0.5, 3*3).reshape(3, 3)
 EPOCH = 20
 
-## 1. Gernerate four categories data
+## 1. Generate four categories data
 X, y = make_blobs(n_samples=150, n_features=2, centers=3, random_state=3)  # state 12
 # transform y to onehot vector
 encoder = OneHotEncoder(categorical_features='all')

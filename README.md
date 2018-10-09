@@ -1,4 +1,4 @@
-# CS229-ML-Implements
+# CS229-ML-Implements(CS229机器学习算法的Python实现)
 Implements of cs229(Machine Leaning taught by Andrew Ng) in python.
 
 # CS229 Machine Learning Xmind:
@@ -6,7 +6,8 @@ Implements of cs229(Machine Leaning taught by Andrew Ng) in python.
 
 # CS229 Machine Learning course and notes:
 [OpenCourse](http://open.163.com/special/opencourse/machinelearning.html)
-[cs229-Notes]()
+
+[cs229-Notes](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/CS229-Notes)
 
 # Examples
 
@@ -21,3 +22,9 @@ Implements of cs229(Machine Leaning taught by Andrew Ng) in python.
 
 ## [Softmax Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/03-GeneralizedLinearModels)
 ![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/softmaxR.gif)
+
+## [Softmax Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/04-GenerativeLearningAlgorithms)
+![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/GDA.gif)
+![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/GDA2.gif)
+
+## TO BE CONTINUED
