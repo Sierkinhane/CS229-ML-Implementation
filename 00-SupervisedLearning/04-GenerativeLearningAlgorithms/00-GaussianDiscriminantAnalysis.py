@@ -1,7 +1,7 @@
 """
   author: Sierkinhane
   since: 2018-10-9 13:55:56
-  description: Guassian Discriminant Analysis(GDA)
+  description: Guassian Discriminant Analysis(GDA) (done)
 """
 
 from sklearn.datasets.samples_generator import make_blobs
