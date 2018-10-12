@@ -27,6 +27,6 @@ Implements of cs229(Machine Leaning taught by Andrew Ng) in python.
 ![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/GDA.png)
 ![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/GDA2.png)
 
-## [Naive Bayes]()
+## [Naive Bayes](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/04-GenerativeLearningAlgorithms/naive_bayes)
 
 ## TO BE CONTINUED
