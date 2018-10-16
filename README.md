@@ -10,17 +10,17 @@ Implements of cs229(Machine Leaning taught by Andrew Ng) in python.
 [cs229-Notes](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/CS229-Notes)
 
 # Syllabus：
-  *[Linear Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/01-LinearRegression)
+  * [Linear Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/01-LinearRegression)
   
-  *[Locally Weighted Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/01-LinearRegression)
+  * [Locally Weighted Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/01-LinearRegression)
   
-  *[Logistic Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/02-Classification)
+  * [Logistic Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/02-Classification)
   
-  *[Softmax Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/03-GeneralizedLinearModels)
+  * [Softmax Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/03-GeneralizedLinearModels)
   
-  *[Gaussian Discriminant Analysis](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/04-GenerativeLearningAlgorithms)
+  * [Gaussian Discriminant Analysis](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/04-GenerativeLearningAlgorithms)
   
-  *[Naive Bayes](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/04-GenerativeLearningAlgorithms/naive_bayes) spam-filter
+  * [Naive Bayes](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/04-GenerativeLearningAlgorithms/naive_bayes) spam-filter
 
 # Examples
 
