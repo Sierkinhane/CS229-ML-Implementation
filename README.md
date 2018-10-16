@@ -9,6 +9,9 @@ Implements of cs229(Machine Leaning taught by Andrew Ng) in python.
 
 [cs229-Notes](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/CS229-Notes)
 
+#Syllabus：
+>[Linear Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/01-LinearRegression)
+
 # Examples
 
 ## [Linear Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/01-LinearRegression)
