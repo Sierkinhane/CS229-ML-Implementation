@@ -12,10 +12,16 @@ Implements of cs229(Machine Leaning taught by Andrew Ng) in python.
 # Syllabus：
   * [Linear Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/01-LinearRegression)
   
+  * [Normal Equation](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/01-LinearRegression)
+  
   * [Locally Weighted Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/01-LinearRegression)
   
   * [Logistic Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/02-Classification)
   
+  * [Perceptron Algorithm](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/02-Classification)
+  
+  * [Newton Method](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/02-Classification)
+ 
   * [Softmax Regression](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/03-GeneralizedLinearModels)
   
   * [Gaussian Discriminant Analysis](https://github.com/Sierkinhane/CS229-ML-Implements/tree/master/00-SupervisedLearning/04-GenerativeLearningAlgorithms)
