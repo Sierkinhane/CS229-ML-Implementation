@@ -86,9 +86,9 @@ plt.show()
 
 # batch gradient descent
 # loss = 0
-# gradient = np.zeros([2, 1], dtype=np.float32)
 # plt.ion()
 # for epoch in range(200):
+# 	gradient = np.zeros([2, 1], dtype=np.float32)
 # 	for x, y in zip(X_train, y_train):
 # 		h_x = hypothesis(x, THETA)
 # 		loss += loss_function(h_x, y)
