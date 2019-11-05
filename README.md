@@ -3,7 +3,7 @@
 # CS229-ML-Implements(CS229机器学习算法的Python实现)
 Implements of cs229(Machine Learning taught by Andrew Ng) in python.
 
-# Due to the limitation of time, I must pay all my attention to my papers, therefore the repository won't update soon.
+# I must pay all my attention to my papers, therefore the repository won't update soon.
 
 # CS229 Machine Learning Xmind:
 ![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/ml-xmind.png)
