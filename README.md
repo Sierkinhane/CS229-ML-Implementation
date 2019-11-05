@@ -1,5 +1,5 @@
 # [2019-11-5] Update: 99.76% mnist accuracy
-![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/ml-xmind.png)
+![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/05-Mnist/data_vis.jpg)
 # CS229-ML-Implements(CS229机器学习算法的Python实现)
 Implements of cs229(Machine Learning taught by Andrew Ng) in python.
 
