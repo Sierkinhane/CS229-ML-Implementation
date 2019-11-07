@@ -1,5 +1,6 @@
-# [2019-11-7] ###Update: Add Generative Adversarial Nets on MNIST in 01-UnsupervisedLerning
-# [2019-11-5] Update: Add 99.76% accuracy mnist model
+## [2019-11-7] Update: Add Generative Adversarial Nets on MNIST in 01-UnsupervisedLerning
+
+## [2019-11-5] Update: Add 99.76% accuracy mnist model
 ![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/05-Mnist/data_vis.jpg)
 # CS229-ML-Implements(CS229机器学习算法的Python实现)
 Implements of cs229(Machine Learning taught by Andrew Ng) in python.
