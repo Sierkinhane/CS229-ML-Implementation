@@ -1,5 +1,5 @@
 ## [2019-11-23] Update: Add Conditional Generative Adversarial Nets on MNIST in 01-UnsupervisedLerning
-<div align=center>![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/18000_generated.jpg)</div>
+![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/18000_generated.jpg)
 ## [2019-11-7] Update: Add Generative Adversarial Nets on MNIST in 01-UnsupervisedLerning
 ![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/31000_generated.jpg)
 ## [2019-11-5] Update: Add 99.76% accuracy mnist model
