@@ -1,5 +1,5 @@
 '''
-fashion mnist classification
+mnist classification
 '''
 
 import numpy as np
