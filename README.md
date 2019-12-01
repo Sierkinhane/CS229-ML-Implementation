@@ -2,6 +2,7 @@
 <p align="center">
     <img src="GIF/19999.png" width="480"\>
 </p>
+
 ![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/19999.png)
 ## [2019-11-7] Update: Add Generative Adversarial Nets on MNIST in 01-UnsupervisedLerning
 ![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/GIF/31000_generated.jpg)
