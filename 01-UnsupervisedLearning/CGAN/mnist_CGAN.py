@@ -10,26 +10,38 @@ import numpy as np
 import torch.nn.functional as F
 from collections import OrderedDict
 import matplotlib.pyplot as plt
+from torchvision.utils import save_image
 import math
+import os
 # np.random.seed(1)
 # torch.random.manual_seed(1)
 
 # 1. generator
 class Generator(nn.Module):
+	# 512 512
 	def __init__(self):
 		super(Generator, self).__init__()
 		self.embedding = nn.Embedding(n_class, n_class)
-		self.model =  nn.Sequential(
+		# self.model =  nn.Sequential(
+		# 	nn.Linear(100+n_class, 128),
+		# 	nn.ReLU(inplace=True),
+		# 	nn.Linear(128, 28*28*1),
+		# 	nn.Sigmoid()
+		# 	)
+		self.model = nn.Sequential(
 			nn.Linear(100+n_class, 128),
-			nn.ReLU(inplace=True),
+			# nn.BatchNorm1d(128),
+			nn.LeakyReLU(inplace=True),
+			# nn.Linear(128, 128),
+			# nn.BatchNorm1d(128),
+			# nn.LeakyReLU(inplace=True),
 			nn.Linear(128, 28*28*1),
-			nn.Sigmoid()
-			)
+			nn.Sigmoid())
 
 	def forward(self, labels, z):
 		embedding = self.embedding(labels)
 		con_info = torch.cat([embedding, z], -1)
-
+		# print(con_info.shape)
 		return self.model(con_info)
 		
 
@@ -40,10 +52,13 @@ class Discriminator(nn.Module):
 		self.embedding = nn.Embedding(n_class, n_class)
 		self.model = nn.Sequential(
 			nn.Linear(28*28*1+n_class, 128),
-			nn.ReLU(inplace=True),
+			# nn.BatchNorm1d(128),
+			nn.LeakyReLU(inplace=True),
+			# nn.Linear(128, 128),
+			# nn.BatchNorm1d(128),
+			# nn.LeakyReLU(inplace=True),
 			nn.Linear(128, 1),
 			nn.Sigmoid())
-	
 	def forward(self, labels, gen_imgs):
 		embedding = self.embedding(labels)
 		con_info = torch.cat([embedding, gen_imgs], -1)
@@ -51,34 +66,37 @@ class Discriminator(nn.Module):
 		return self.model(con_info)
 		
 
-def sample_images(generator, iteration, device, image_grid_rows=4, image_grid_columns=4):
+def sample_images(generator, iteration, device, image_grid_rows=10, image_grid_columns=10):
 
 	labels = [r for _ in range(image_grid_columns) for r in range(image_grid_rows)]
 	labels = torch.LongTensor(labels).to(device)
 	z = torch.from_numpy(np.random.normal(0, 1, (image_grid_rows*image_grid_columns, 100)).astype(np.float32)).to(device)
 	gen_imgs = generator(labels, z)
-	# Generate images from random noise
-	gen_imgs = gen_imgs.cpu().detach().numpy().reshape(-1, 28, 28)
-
-	# Rescale image pixel values to [0, 1]
+	gen_imgs = gen_imgs.reshape(-1, 1, 28, 28)
+	if not os.path.exists('images'):
+		os.mkdir('images')
+	save_image(gen_imgs.data, "images/%d.png" % iteration, nrow=10, normalize=True)
+	
+	# # Rescale image pixel values to [0, 1]
+	# gen_imgs = gen_imgs.cpu().detach().numpy().reshape(-1, 28, 28)
 	# gen_imgs = 0.5 * gen_imgs + 0.5
 
-	# Set image grid
-	fig, axs = plt.subplots(image_grid_rows,
-							image_grid_columns,
-							figsize=(4, 4),
-							sharey=True,
-							sharex=True)
+	# # Set image grid
+	# fig, axs = plt.subplots(image_grid_rows,
+	# 						image_grid_columns,
+	# 						figsize=(4, 4),
+	# 						sharey=True,
+	# 						sharex=True)
 
-	cnt = 0
-	for i in range(image_grid_rows):
-		for j in range(image_grid_columns):
-			# Output a grid of images
-			axs[i, j].imshow(gen_imgs[cnt, :, :])
-			axs[i, j].axis('off')
-			plt.savefig(str(iteration+1)+'_generated.jpg')
-			cnt += 1
-	plt.close()
+	# cnt = 0
+	# for i in range(image_grid_rows):
+	# 	for j in range(image_grid_columns):
+	# 		# Output a grid of images
+	# 		axs[i, j].imshow(gen_imgs[cnt, :, :])
+	# 		axs[i, j].axis('off')
+	# 		plt.savefig(str(iteration+1)+'_generated.jpg')
+	# 		cnt += 1
+	# plt.close()
 
 # 3. training
 def train(generator, discriminator, device, iterations, batch_size, sample_interval, lr):
@@ -168,4 +186,5 @@ if __name__ == '__main__':
 	discriminator = Discriminator()
 	
 	train(generator, discriminator, device, iterations, batch_size, sample_interval, lr)
+
 
