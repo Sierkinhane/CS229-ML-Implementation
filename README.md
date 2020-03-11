@@ -9,7 +9,6 @@
 </p>
 
 [2019-11-5] Update: Add 99.76% accuracy mnist model
-![](https://github.com/Sierkinhane/CS229-ML-Implements/blob/master/05-Mnist/data_vis.jpg)
 <p>
     <img src="05-Mnist/data_vis.jpg" width="480">
 </p>
